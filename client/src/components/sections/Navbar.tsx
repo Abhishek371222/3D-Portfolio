@@ -62,9 +62,11 @@ export default function Navbar() {
               >
                 <Linkedin size={20} />
               </a>
-              <Button variant="default" size="sm" className="ml-4 text-primary-foreground font-bold">
-                Resume
-              </Button>
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <Button variant="default" size="sm" className="ml-4 text-primary-foreground font-bold">
+                  Resume
+                </Button>
+              </a>
             </div>
           </div>
           
@@ -116,7 +118,9 @@ export default function Navbar() {
               </a>
             </div>
             <div className="px-3 pb-2">
-              <Button className="w-full">Resume</Button>
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="block w-full">
+                <Button className="w-full">Resume</Button>
+              </a>
             </div>
           </div>
         </motion.div>
