@@ -15,21 +15,20 @@ export default function Hero() {
             Hello, I'm
           </span>
           <h1 className="text-5xl md:text-8xl font-display font-bold tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/50">
-            Abhishek A
+            Abhishek
           </h1>
           <h2 className="text-2xl md:text-4xl text-muted-foreground font-light mb-8">
-            Full-Stack Engineer based in <span className="text-primary">Pune</span>
+            Full-Stack Engineer <span className="text-primary">|</span> AI/ML Enthusiast
           </h2>
           <p className="max-w-2xl mx-auto text-lg text-muted-foreground/80 mb-10 leading-relaxed">
-            I build accessible, pixel-perfect, performant web experiences. 
-            Merging technical expertise with design thinking to create digital products that matter.
+            Building intelligent web solutions with a passion for algorithms, data structures, and problem-solving.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="min-w-[160px] text-base font-semibold">
+            <Button size="lg" className="min-w-[160px] text-base font-semibold bg-primary text-primary-foreground hover:bg-primary/90">
               View Projects
             </Button>
-            <Button size="lg" variant="outline" className="min-w-[160px] text-base">
+            <Button size="lg" variant="outline" className="min-w-[160px] text-base border-white/20 hover:bg-white/5">
               Contact Me
             </Button>
           </div>

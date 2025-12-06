@@ -1,29 +1,32 @@
 import { motion } from "framer-motion";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Github, ExternalLink, Folder } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Github, ExternalLink, Folder, TrendingUp, MessageSquare, Layout } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 const projects = [
   {
-    title: "E-Commerce Dashboard",
-    description: "A comprehensive analytics dashboard for online retailers with real-time data visualization.",
-    tags: ["React", "D3.js", "Node.js", "MongoDB"],
+    title: "Stock Price Prediction",
+    period: "Sept 2025 – Nov 2025",
+    description: "Built predictive model for stock price forecasting using LSTM and Random Forest on historical market data. Implemented preprocessing, feature engineering (technical indicators), and model evaluation achieving 85%+ accuracy. Created interactive dashboard for visualization and trend analysis.",
+    tags: ["Python", "Pandas", "Scikit-Learn", "TensorFlow", "Data Visualization"],
     links: { demo: "#", github: "#" },
-    featured: true
+    icon: <TrendingUp size={24} />
   },
   {
-    title: "AI Content Generator",
-    description: "SaaS platform leveraging OpenAI's API to help marketers generate blog posts and social media content.",
-    tags: ["Next.js", "Tailwind", "OpenAI API", "Stripe"],
+    title: "Sentiment Analysis System",
+    period: "Jan 2023 – Apr 2023",
+    description: "Achieved 92% sentiment classification accuracy on 10,000+ social media posts. Implemented NLP pipeline: preprocessing, tokenization, TF-IDF vectorization. Trained and compared multiple ML models (SVM, Naive Bayes, Random Forest).",
+    tags: ["Python", "NLTK", "Scikit-Learn", "NLP", "Machine Learning"],
     links: { demo: "#", github: "#" },
-    featured: true
+    icon: <MessageSquare size={24} />
   },
   {
-    title: "Task Management App",
-    description: "Collaborative project management tool with drag-and-drop kanban boards and team chat.",
-    tags: ["Vue.js", "Firebase", "Vuex"],
+    title: "Personal Portfolio Website",
+    period: "Aug 2024 – Sept 2024",
+    description: "Developed responsive portfolio with modern UI/UX; scored 95+ on Lighthouse. Built interactive galleries, forms, animations; deployed to GitHub Pages.",
+    tags: ["HTML5", "CSS3", "JavaScript (ES6+)", "Bootstrap", "GitHub Pages"],
     links: { demo: "#", github: "#" },
-    featured: false
+    icon: <Layout size={24} />
   }
 ];
 
@@ -55,7 +58,7 @@ export default function Projects() {
                 <CardHeader>
                   <div className="flex justify-between items-start mb-4">
                     <div className="p-2 bg-primary/10 rounded-lg text-primary group-hover:bg-primary group-hover:text-background transition-colors">
-                      <Folder size={24} />
+                      {project.icon}
                     </div>
                     <div className="flex gap-2">
                       <a href={project.links.github} className="text-muted-foreground hover:text-primary transition-colors">
@@ -66,19 +69,22 @@ export default function Projects() {
                       </a>
                     </div>
                   </div>
-                  <CardTitle className="text-xl font-bold group-hover:text-primary transition-colors">
-                    {project.title}
-                  </CardTitle>
+                  <div className="flex justify-between items-center mb-2">
+                    <CardTitle className="text-xl font-bold group-hover:text-primary transition-colors">
+                      {project.title}
+                    </CardTitle>
+                  </div>
+                  <span className="text-xs text-muted-foreground font-mono block mb-2">{project.period}</span>
                 </CardHeader>
-                <CardContent className="flex-grow">
-                  <CardDescription className="text-base mb-6">
+                <CardContent className="flex-grow flex flex-col">
+                  <CardDescription className="text-base mb-6 leading-relaxed text-muted-foreground/90">
                     {project.description}
                   </CardDescription>
                   <div className="flex flex-wrap gap-2 mt-auto">
                     {project.tags.map(tag => (
-                      <span key={tag} className="text-xs font-mono text-primary/80">
+                      <Badge key={tag} variant="secondary" className="text-xs font-mono bg-primary/10 text-primary hover:bg-primary/20 border-primary/20">
                         {tag}
-                      </span>
+                      </Badge>
                     ))}
                   </div>
                 </CardContent>

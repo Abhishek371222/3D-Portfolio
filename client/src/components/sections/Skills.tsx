@@ -2,10 +2,30 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 
 const skills = [
-  { category: "Frontend", items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Three.js", "Framer Motion"] },
-  { category: "Backend", items: ["Node.js", "Express", "PostgreSQL", "GraphQL", "Python", "Redis"] },
-  { category: "DevOps", items: ["Docker", "AWS", "CI/CD", "Git", "Linux", "Nginx"] },
-  { category: "Tools", items: ["VS Code", "Figma", "Postman", "Jest", "Webpack", "Vite"] }
+  { 
+    category: "Programming", 
+    items: ["C", "C++", "Java", "Python", "JavaScript"] 
+  },
+  { 
+    category: "Web Development", 
+    items: ["Django", "HTML5", "CSS3", "JS", "Responsive Design"] 
+  },
+  { 
+    category: "ML & Data", 
+    items: ["Pandas", "NumPy", "Scikit-Learn", "TensorFlow", "Statistical Analysis", "NLP", "Model Evaluation"] 
+  },
+  { 
+    category: "Databases", 
+    items: ["SQL", "MySQL", "PostgreSQL"] 
+  },
+  { 
+    category: "Tools", 
+    items: ["Git", "GitHub"] 
+  },
+  { 
+    category: "Soft Skills", 
+    items: ["Leadership", "Communication", "Organization"] 
+  }
 ];
 
 export default function Skills() {
@@ -19,11 +39,11 @@ export default function Skills() {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Technical Skills</h2>
+          <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">Skills</h2>
           <div className="h-1 w-20 bg-primary rounded-full" />
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((skillGroup, index) => (
             <motion.div
               key={skillGroup.category}

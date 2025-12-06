@@ -15,7 +15,7 @@ export default function About() {
               <div className="absolute -inset-4 bg-primary/20 rounded-2xl blur-xl" />
               <img 
                 src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=2855&auto=format&fit=crop" 
-                alt="Abhishek A" 
+                alt="Abhishek" 
                 className="relative rounded-2xl shadow-2xl border border-white/10 w-full h-auto object-cover aspect-[4/5] grayscale hover:grayscale-0 transition-all duration-500"
               />
             </div>
@@ -30,28 +30,23 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">About Me</h2>
             <div className="space-y-6 text-lg text-muted-foreground">
               <p>
-                I'm a passionate Full-Stack Engineer based in Pune, India. With a deep love for 
-                clean code and intuitive design, I create digital experiences that solve real-world problems.
+                Full-stack engineer with experience in Python, JavaScript, ML, NLP, and web development. 
+                Worked on predictive modeling, sentiment analysis, and building production-ready web interfaces.
               </p>
               <p>
-                My journey started with a curiosity for how things work on the web, which led me to 
-                mastering the modern JavaScript ecosystem. Today, I specialize in building scalable 
-                web applications using React, Node.js, and cloud technologies.
-              </p>
-              <p>
-                When I'm not coding, you can find me exploring new coffee shops in Pune, 
-                reading about space exploration, or experimenting with 3D art.
+                Strong foundation in algorithms, data structures, and problem-solving. 
+                Experienced in teamwork through internships, event management, and AI/ML club roles.
               </p>
             </div>
             
             <div className="mt-8 grid grid-cols-2 gap-4">
               <div className="p-4 bg-card/50 rounded-lg border border-white/5">
-                <div className="text-3xl font-bold text-primary mb-1">5+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
+                <div className="text-3xl font-bold text-primary mb-1">4+</div>
+                <div className="text-sm text-muted-foreground">Projects</div>
               </div>
               <div className="p-4 bg-card/50 rounded-lg border border-white/5">
-                <div className="text-3xl font-bold text-primary mb-1">50+</div>
-                <div className="text-sm text-muted-foreground">Projects Completed</div>
+                <div className="text-3xl font-bold text-primary mb-1">8.19</div>
+                <div className="text-sm text-muted-foreground">CGPA</div>
               </div>
             </div>
           </motion.div>

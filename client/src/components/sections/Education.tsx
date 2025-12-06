@@ -4,16 +4,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const education = [
   {
-    degree: "Bachelor of Engineering in Computer Science",
-    school: "Pune Institute of Computer Technology",
-    year: "2015 - 2019",
-    description: "Focused on Algorithms, Data Structures, and Web Technologies. Graduated with First Class with Distinction."
-  },
-  {
-    degree: "Higher Secondary Education",
-    school: "Fergusson College, Pune",
-    year: "2013 - 2015",
-    description: "Science stream with focus on Mathematics and Electronics."
+    degree: "B.Tech in Computer Engineering",
+    school: "Vellore Institute of Technology (VIT)",
+    year: "Sept 2022 – May 2026",
+    grade: "CGPA: 8.19/10"
   }
 ];
 
@@ -56,7 +50,7 @@ export default function Education() {
                 </CardHeader>
                 <CardContent>
                   <h3 className="text-lg font-semibold mb-2 text-foreground/90">{edu.school}</h3>
-                  <p className="text-muted-foreground">{edu.description}</p>
+                  <p className="text-muted-foreground font-medium">{edu.grade}</p>
                 </CardContent>
               </Card>
             </motion.div>

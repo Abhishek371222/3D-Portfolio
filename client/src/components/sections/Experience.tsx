@@ -1,24 +1,29 @@
 import { motion } from "framer-motion";
-import { Calendar, Briefcase } from "lucide-react";
+import { Calendar, Briefcase, MapPin } from "lucide-react";
 
 const experiences = [
   {
-    company: "Tech Solutions Inc.",
-    role: "Senior Full-Stack Engineer",
-    period: "2023 - Present",
-    description: "Leading a team of 5 developers in building enterprise-grade React applications. Improved performance by 40% and reduced build times by 50%."
+    company: "One Stop Global",
+    role: "Intern (Remote)",
+    location: "Gurgaon",
+    period: "Oct 2024 – Dec 2024",
+    description: [
+      "Improved task efficiency by 15% with optimized workflows.",
+      "Organized 500+ files and reports to improve accessibility.",
+      "Attended workshops, increasing project knowledge by 30%.",
+      "Used strong communication to coordinate with the team."
+    ]
   },
   {
-    company: "Digital Innovations",
-    role: "Frontend Developer",
-    period: "2021 - 2023",
-    description: "Developed responsive UI components using React and TypeScript. Collaborated with designers to implement pixel-perfect designs."
-  },
-  {
-    company: "StartUp Hub",
-    role: "Junior Web Developer",
-    period: "2019 - 2021",
-    description: "Assisted in backend development using Node.js and Express. Maintained legacy codebases and fixed critical bugs."
+    company: "Cvent",
+    role: "Volunteer",
+    location: "New Delhi",
+    period: "May 2023 – July 2023",
+    description: [
+      "Assisted in event planning and execution with the Event Management team.",
+      "Communicated with attendees, resulting in positive feedback.",
+      "Enhanced teamwork and coordination skills."
+    ]
   }
 ];
 
@@ -58,14 +63,22 @@ export default function Experience() {
                 </div>
               </div>
               
-              <div className="text-lg font-medium text-primary mb-3 flex items-center">
-                <Briefcase size={16} className="mr-2" />
-                {exp.company}
+              <div className="flex flex-wrap items-center gap-3 text-lg font-medium text-primary mb-3">
+                <div className="flex items-center">
+                  <Briefcase size={16} className="mr-2" />
+                  {exp.company}
+                </div>
+                <div className="flex items-center text-sm text-muted-foreground/80">
+                   <MapPin size={14} className="mr-1" />
+                   {exp.location}
+                </div>
               </div>
               
-              <p className="text-muted-foreground leading-relaxed max-w-2xl">
-                {exp.description}
-              </p>
+              <ul className="list-disc list-outside ml-4 space-y-2 text-muted-foreground leading-relaxed max-w-2xl">
+                {exp.description.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
             </motion.div>
           ))}
         </div>
