@@ -4,10 +4,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const education = [
   {
-    degree: "B.Tech in Computer Engineering",
+    degree: "Bachelor of Technology in Computer Engineering",
     school: "Vellore Institute of Technology (VIT)",
     year: "Sept 2022 – May 2026",
-    grade: "CGPA: 8.19/10"
+    grade: "CGPA: 8.34/10"
+  },
+  {
+    degree: "Class XII – Higher Secondary Education",
+    school: "Kendriya Vidyalaya Rajasthan",
+    year: "Apr 2020 – Apr 2021",
+    grade: "Percentage: 94%"
   }
 ];
 

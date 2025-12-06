@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Linkedin, Github } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -77,18 +77,6 @@ export default function Contact() {
               <Card className="bg-card/30 backdrop-blur-md border-white/10">
                 <CardContent className="p-6 flex items-center gap-4">
                   <div className="p-3 bg-primary/10 rounded-full text-primary">
-                    <Phone size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground">Phone</h3>
-                    <p className="text-muted-foreground">+91 98765 43210</p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card/30 backdrop-blur-md border-white/10">
-                <CardContent className="p-6 flex items-center gap-4">
-                  <div className="p-3 bg-primary/10 rounded-full text-primary">
                     <MapPin size={24} />
                   </div>
                   <div>
@@ -97,6 +85,35 @@ export default function Contact() {
                   </div>
                 </CardContent>
               </Card>
+
+              <div className="flex gap-4">
+                <a 
+                  href="https://www.linkedin.com/in/abhishek-a-72965b342" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex-1"
+                >
+                  <Card className="bg-card/30 backdrop-blur-md border-white/10 hover:border-primary/50 transition-colors cursor-pointer group">
+                    <CardContent className="p-6 flex items-center justify-center gap-2">
+                      <Linkedin className="text-muted-foreground group-hover:text-primary transition-colors" />
+                      <span className="font-semibold text-muted-foreground group-hover:text-primary transition-colors">LinkedIn</span>
+                    </CardContent>
+                  </Card>
+                </a>
+                <a 
+                  href="https://github.com/Abhishek371222" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex-1"
+                >
+                  <Card className="bg-card/30 backdrop-blur-md border-white/10 hover:border-primary/50 transition-colors cursor-pointer group">
+                    <CardContent className="p-6 flex items-center justify-center gap-2">
+                      <Github className="text-muted-foreground group-hover:text-primary transition-colors" />
+                      <span className="font-semibold text-muted-foreground group-hover:text-primary transition-colors">GitHub</span>
+                    </CardContent>
+                  </Card>
+                </a>
+              </div>
             </div>
           </motion.div>
 

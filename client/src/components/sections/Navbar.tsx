@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Github, Linkedin } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -33,8 +33,8 @@ export default function Navbar() {
             </Link>
           </div>
           
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+          <div className="hidden md:flex items-center">
+            <div className="ml-10 flex items-baseline space-x-6">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -44,6 +44,24 @@ export default function Navbar() {
                   {link.name}
                 </a>
               ))}
+            </div>
+            <div className="flex items-center space-x-4 ml-6 pl-6 border-l border-white/10">
+              <a 
+                href="https://github.com/Abhishek371222" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Github size={20} />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/abhishek-a-72965b342" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Linkedin size={20} />
+              </a>
               <Button variant="default" size="sm" className="ml-4 text-primary-foreground font-bold">
                 Resume
               </Button>
@@ -79,7 +97,25 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-            <div className="pt-4">
+            <div className="flex items-center space-x-4 px-3 py-4 border-t border-white/10 mt-2">
+              <a 
+                href="https://github.com/Abhishek371222" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Github size={24} />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/abhishek-a-72965b342" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Linkedin size={24} />
+              </a>
+            </div>
+            <div className="px-3 pb-2">
               <Button className="w-full">Resume</Button>
             </div>
           </div>

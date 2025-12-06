@@ -7,6 +7,7 @@ import Experience from "@/components/sections/Experience";
 import Education from "@/components/sections/Education";
 import Skills from "@/components/sections/Skills";
 import Contact from "@/components/sections/Contact";
+import { Github, Linkedin } from "lucide-react";
 
 export default function Home() {
   return (
@@ -28,7 +29,25 @@ export default function Home() {
         </main>
         
         <footer className="py-8 text-center text-muted-foreground text-sm border-t border-white/5 bg-black/40 backdrop-blur-sm">
-          <p>© {new Date().getFullYear()} Abhishek A. All rights reserved.</p>
+          <div className="flex justify-center space-x-6 mb-4">
+            <a 
+              href="https://github.com/Abhishek371222" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Github size={20} />
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/abhishek-a-72965b342" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Linkedin size={20} />
+            </a>
+          </div>
+          <p>© {new Date().getFullYear()} Abhishek. All rights reserved.</p>
         </footer>
       </div>
     </div>

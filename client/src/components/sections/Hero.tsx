@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
@@ -20,9 +20,28 @@ export default function Hero() {
           <h2 className="text-2xl md:text-4xl text-muted-foreground font-light mb-8">
             Full-Stack Engineer <span className="text-primary">|</span> AI/ML Enthusiast
           </h2>
-          <p className="max-w-2xl mx-auto text-lg text-muted-foreground/80 mb-10 leading-relaxed">
+          <p className="max-w-2xl mx-auto text-lg text-muted-foreground/80 mb-8 leading-relaxed">
             Building intelligent web solutions with a passion for algorithms, data structures, and problem-solving.
           </p>
+          
+          <div className="flex justify-center space-x-6 mb-10">
+            <a 
+              href="https://github.com/Abhishek371222" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors transform hover:scale-110 duration-200"
+            >
+              <Github size={28} />
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/abhishek-a-72965b342" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors transform hover:scale-110 duration-200"
+            >
+              <Linkedin size={28} />
+            </a>
+          </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button size="lg" className="min-w-[160px] text-base font-semibold bg-primary text-primary-foreground hover:bg-primary/90">
