@@ -1,6 +1,17 @@
 # 3D Portfolio
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-blue?style=for-the-badge)](https://portfolio-alpha-kohl-zskf5ep2eq.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Abhishek371222-black?style=for-the-badge&logo=github)](https://github.com/Abhishek371222/3D-Portfolio)
+[![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)](https://reactjs.org)
+[![Three.js](https://img.shields.io/badge/Three.js-r148-black?style=for-the-badge&logo=three.js)](https://threejs.org)
+
 A modern, high-performance single-page 3D portfolio built with React, Three.js, and TypeScript. Showcase your projects and skills with stunning 3D visualizations and smooth interactions.
+
+## 🌐 Live Demo
+
+**[View Live Portfolio →](https://portfolio-alpha-kohl-zskf5ep2eq.vercel.app)**
+
+Experience the 3D portfolio in action. Click around, explore the interactive elements, and enjoy the smooth animations!
 
 ## 🚀 Features
 
