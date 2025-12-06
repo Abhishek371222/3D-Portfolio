@@ -45,7 +45,7 @@ export default function About() {
                 <div className="text-sm text-muted-foreground">Projects</div>
               </div>
               <div className="p-4 bg-card/50 rounded-lg border border-white/5">
-                <div className="text-3xl font-bold text-primary mb-1">8.19</div>
+                <div className="text-3xl font-bold text-primary mb-1">8.34</div>
                 <div className="text-sm text-muted-foreground">CGPA</div>
               </div>
             </div>
